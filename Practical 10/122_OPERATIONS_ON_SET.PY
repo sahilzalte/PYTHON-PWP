@@ -24,3 +24,5 @@ print("After discarding 100 (if present):", my_set)
 # 4. Delete Set
 my_set.clear()  # Deleting the set
 print(my_set)  # This will raise an error as set is deleted
+
+
