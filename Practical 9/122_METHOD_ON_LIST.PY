@@ -10,8 +10,10 @@ print("Printing Tuple:", my_tuple)
 
 # 4. Delete the Tuple (Tuples are immutable, so we delete the whole tuple)
 del my_tuple
-print(my_tuple)  # This will raise an error as tuple is deleted
-
+try:
+    print(my_tuple)  # This will raise an error as tuple is deleted
+except NameError:
+    print("Tuple deleted successfully!")
 
 # 5. Convert Tuple into List and Vice-Versa
 tuple_data = (1, 2, 3, 4, 5)  # Original Tuple
