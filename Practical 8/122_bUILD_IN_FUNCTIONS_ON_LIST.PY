@@ -1,34 +1,37 @@
-# Creating a sample list
-numbers = [5, 2, 9, 1, 5, 6]
+# Define a list
+my_list = [3, 1, 4, 1, 5, 9, 2]
 
-# 1. append(): 
-numbers.append(10)
-print("After append(10):", numbers)
+# 1. Get length of list
+print("1. Length of list:", len(my_list))
 
-# 2. insert(): 
-numbers.insert(2, 15)  
-print("After insert(2, 15):", numbers)
+# 2. Find max value in list
+print("2. Max value:", max(my_list))
 
-# 3. remove(): 
-numbers.remove(5)  
-print("After remove(5):", numbers)
+# 3. Convert tuple to list
+my_tuple = (10, 20, 30)
+new_list = list(my_tuple)
+print("3. Converted list:", new_list)
 
-# 4. pop(): 
-popped_element = numbers.pop()
-print("After pop():", numbers, "Popped element:", popped_element)
+# 4. Append element to list
+my_list.append(6)
+print("4. After append:", my_list)
 
-# 5. sort(): 
-numbers.sort()
-print("After sort():", numbers)
+# 5. Count occurrences of an element
+print("5. Count of 1:", my_list.count(1))
 
-# 6. reverse(): 
-numbers.reverse()
-print("After reverse():", numbers)
+# 6. Extend list with another list
+my_list.extend([7, 8, 9])
+print("6. After extend:", my_list)
 
-# 7. count(): 
-count_five = numbers.count(5)
-print("Count of 5:", count_five)
+# 7. Insert element at specific index
+my_list.insert(2, 100)
+print("7. After insert:", my_list)
 
-# 8. index(): 
-index_six = numbers.index(6)  
-print("Index of 6:", index_six)
+# 8. Pop last element (remove and return it)
+popped_element = my_list.pop()
+print("8. Popped element:", popped_element)
+print("8. After pop:", my_list)
+
+# 9. Remove first occurrence of a value
+my_list.remove(1)
+print("9. After remove:", my_list)
